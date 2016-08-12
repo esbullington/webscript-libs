@@ -1,6 +1,6 @@
 
 
-local split = function split(str, pat)
+local split = function (str, pat)
    local t = {}  -- NOTE: use {n = 0} in Lua-5.0
    local fpat = "(.-)" .. pat
    local last_end = 1
@@ -18,6 +18,5 @@ local split = function split(str, pat)
    end
    return t
 end
-
 
 return {split=split}
